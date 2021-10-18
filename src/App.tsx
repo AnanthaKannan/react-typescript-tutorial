@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Greet } from './components/Greet';
+import { ListDetails } from './components/ListDetails';
+import { SendObj } from './components/SendObj';
+import { Status } from './components/Status';
 
 function App() {
+
+  const fullName = {
+    first: "sree",
+     last: "Kannan"
+    }
+
+  const nameList = [
+    {id: 1, first: "hello", last: "hai"}, 
+    {id: 2, first: "eee", last:"xyz"},
+    {id: 3, first: "sree", last:"kannan"}
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet name="Kannan" age={30} isMarried={true} />
+      <SendObj name={fullName} />
+     <ListDetails names={nameList} />
+     <Status status="loading" />
     </div>
   );
 }
