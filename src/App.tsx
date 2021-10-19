@@ -1,6 +1,9 @@
 import './App.css';
+import { ChildrenProps } from './components/ChildrenProps';
+import { EventProps } from './components/EventProps';
 import { Greet } from './components/Greet';
 import { ListDetails } from './components/ListDetails';
+import { Oscar } from './components/Oscar';
 import { SendObj } from './components/SendObj';
 import { Status } from './components/Status';
 
@@ -23,6 +26,11 @@ function App() {
       <SendObj name={fullName} />
      <ListDetails names={nameList} />
      <Status status="loading" />
+     <ChildrenProps> some child data is passed </ChildrenProps>
+     <Oscar>
+     <ChildrenProps>  oscar data is here</ChildrenProps>
+     </Oscar>
+     <EventProps />
     </div>
   );
 }

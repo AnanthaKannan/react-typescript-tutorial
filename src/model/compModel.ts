@@ -1,9 +1,7 @@
-import { type } from "os"
-
 export type GreetProps = {
     name: string,
     age: number,
-    isMarried: boolean
+    isMarried ?: boolean // "?" this is optional
 }
 
 export type FullName = {
@@ -23,4 +21,20 @@ export type NameList = {
 
 export type statusProps = {
     status: 'loading' | 'success' | 'error'
+}
+
+export type ChildProps = {
+    children: string
+}
+
+export type OscarProps = {
+    children: React.ReactNode
+}
+
+export type ButtonProps = {
+    handleClick: () => void
+}
+
+export type ButtonPropsTwo = {
+    handleClickProps: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
