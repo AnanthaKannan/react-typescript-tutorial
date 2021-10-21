@@ -1,3 +1,5 @@
+import React from "react"
+
 export type GreetProps = {
     name: string,
     age: number,
@@ -42,4 +44,8 @@ export type ButtonPropsTwo = {
 export type inputProps = {
     value: string,
     handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+}
+
+export type styleProps = {
+    styles: React.CSSProperties
 }

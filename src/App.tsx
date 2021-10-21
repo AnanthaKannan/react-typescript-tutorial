@@ -6,6 +6,7 @@ import { ListDetails } from './components/ListDetails';
 import { Oscar } from './components/Oscar';
 import { SendObj } from './components/SendObj';
 import { Status } from './components/Status';
+import { StyleProps } from './components/StyleProps';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
      <ChildrenProps>  oscar data is here</ChildrenProps>
      </Oscar>
      <EventProps />
+     <StyleProps styles={{border: '1px solid black', padding: '1rem'}} />
     </div>
   );
 }
