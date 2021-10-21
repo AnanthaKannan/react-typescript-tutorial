@@ -32,9 +32,14 @@ export type OscarProps = {
 }
 
 export type ButtonProps = {
-    handleClick: () => void
+    handleClick: () => void // it will return
 }
 
 export type ButtonPropsTwo = {
-    handleClickProps: (event: React.MouseEvent<HTMLButtonElement>) => void
+    handleClickProps: (event: React.MouseEvent<HTMLButtonElement>, id: number) => void
+}
+
+export type inputProps = {
+    value: string,
+    handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }

@@ -5,5 +5,5 @@ export const Button = (props: ButtonProps) => {
 }
 
 export const ButtonTwo = (props: ButtonPropsTwo) => {
-    return <button onClick={props.handleClickProps} >click 2</button>
+    return <button onClick={(event) => props.handleClickProps(event, 10)} >click 2</button>
 }
