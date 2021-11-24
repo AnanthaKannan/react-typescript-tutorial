@@ -1,10 +1,12 @@
 import './App.css';
 import { ChildrenProps } from './components/ChildrenProps';
+import { DiffEnv } from './components/DiffEnv';
 import { EventProps } from './components/EventProps';
 import { Greet } from './components/Greet';
 import { ListDetails } from './components/ListDetails';
 import { Oscar } from './components/Oscar';
 import { SendObj } from './components/SendObj';
+import { UseState } from './components/state/UseState';
 import { Status } from './components/Status';
 import { StyleProps } from './components/StyleProps';
 
@@ -32,7 +34,9 @@ function App() {
      <ChildrenProps>  oscar data is here</ChildrenProps>
      </Oscar>
      <EventProps />
+     <UseState />
      <StyleProps styles={{border: '1px solid black', padding: '1rem'}} />
+     <DiffEnv />
     </div>
   );
 }
